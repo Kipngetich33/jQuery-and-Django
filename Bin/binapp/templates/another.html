@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h3> the block content </h3>
+{% endblock content %}
+
+{% block js %}
+  <script src="{% static 'myScript.js' %}"></script> 
+{% endblock js %}
