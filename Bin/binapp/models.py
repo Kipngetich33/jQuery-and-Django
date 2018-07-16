@@ -8,15 +8,12 @@ class Dog(models.Model):
     data = JSONField()
 
     def __str__(self):
-        return self.data
+        return self.name
 
-    @classmethod
-    def get_data(cls):
-        latest = cls.objects.first()
-        return latest
 
 class Lion(models.Model):
     name = models.CharField(max_length=200)
 
     def __str__(self):
         return self.name
+

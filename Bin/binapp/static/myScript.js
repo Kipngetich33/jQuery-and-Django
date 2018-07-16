@@ -8,9 +8,11 @@ function get_data(){
         dataType : 'json',
         cache: false,
         success: function(data) {
-            posting()
+            // posting()
+            my_data = data
+            my_data.forEach(function(obj) { console.log(obj.id); });
         },
-        error:function(){
+        error:function(){ 
 
         }
     });

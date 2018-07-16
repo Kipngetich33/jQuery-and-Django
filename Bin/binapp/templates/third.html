@@ -1,1 +1,18 @@
+
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<style type="text/css">
+body{
+    background: url("{% static 'img/option1_1.png' %}")
+}
+h1{
+    color:blue;
+}
+</style>
+{% endblock css%}
+
+{% block content %}
+<h1>Show background Image</h1>
+{% endblock content %}
