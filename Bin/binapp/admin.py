@@ -1,3 +1,6 @@
 from django.contrib import admin
+from . models import Dog,Lion,fetch
 
-# Register your models here.
+admin.site.register(Dog)
+admin.site.register(Lion)
+admin.site.register(fetch)
