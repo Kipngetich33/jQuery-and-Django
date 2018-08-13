@@ -9,6 +9,7 @@ urlpatterns=[
     url(r'^third/', views.third, name='third'),
     url(r'^json_response/', views.json_response, name='json_response'),
     url(r'^jquery_test', views.jquery_test, name='jquery_test'),
+    url(r'^navbar/', views.navbar, name='nav_bar'),
 
     # class based views
     url(r'^view/', views.MyView.as_view()),

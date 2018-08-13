@@ -103,7 +103,10 @@ class LionList(generics.ListCreateAPIView):
     queryset = Lion.objects.all()
     serializer_class = LionSerializer
 
-
 class LionDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Lion.objects.all()
     serializer_class = LionSerializer
+
+# this is a test view function for a sticky navbar
+def navbar(request):
+    return render(request ,'navbar.html')
